@@ -38,9 +38,9 @@ public interface SecurityManagerApi {
   @Headers(value=["Content-Type: application/json"])
   public fun deletePassword(@Param("id") id: Long): Unit
 
-  @RequestLine("POST /v1/passwords/{id}/verify")
+  @RequestLine("POST /v1/passwords/verify")
   @Headers(value=["Content-Type: application/json"])
-  public fun verifyPassword(@Param("id") id: Long, request: VerifyPasswordRequest): Unit
+  public fun verifyPassword(request: VerifyPasswordRequest): Unit
 
   @RequestLine("GET /v1/keys/{id}")
   @Headers(value=["Content-Type: application/json"])
