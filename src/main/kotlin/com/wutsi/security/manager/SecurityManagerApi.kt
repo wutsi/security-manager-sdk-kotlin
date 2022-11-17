@@ -30,13 +30,13 @@ public interface SecurityManagerApi {
   @Headers(value=["Content-Type: application/json"])
   public fun createPassword(request: CreatePasswordRequest): CreatePasswordResponse
 
-  @RequestLine("POST /v1/passwords/{id}")
+  @RequestLine("DELETE /v1/passwords")
   @Headers(value=["Content-Type: application/json"])
-  public fun updatePassword(@Param("id") id: Long, request: UpdatePasswordRequest): Unit
+  public fun deletePassword(): Unit
 
-  @RequestLine("DELETE /v1/passwords/{id}")
+  @RequestLine("PUT /v1/passwords")
   @Headers(value=["Content-Type: application/json"])
-  public fun deletePassword(@Param("id") id: Long): Unit
+  public fun updatePassword(request: UpdatePasswordRequest): Unit
 
   @RequestLine("POST /v1/passwords/verify")
   @Headers(value=["Content-Type: application/json"])
