@@ -6,7 +6,7 @@
 
   <artifactId>security-manager-sdk-kotlin</artifactId>
   <groupId>com.wutsi.security.manager</groupId>
-  <version>1.0.13-SNAPSHOT</version>
+  <version>1.0.13</version>
   <packaging>jar</packaging>
 
   <name>security-manager-sdk-kotlin</name>
@@ -56,7 +56,7 @@
 
   <scm>
     <developerConnection>scm:git:https://github.com/wutsi/security-manager-sdk-kotlin.git</developerConnection>
-    <tag>HEAD</tag>
+    <tag>security-manager-sdk-kotlin-1.0.13</tag>
   </scm>
   <distributionManagement>
     <repository>
